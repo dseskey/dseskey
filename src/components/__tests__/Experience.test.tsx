@@ -8,6 +8,7 @@ describe('Experience', () => {
     expect(screen.getByText('Professional Experience')).toBeInTheDocument();
   });
 
+  // amazonq-ignore-next-line
   it('renders all experience items', () => {
     render(<Experience />);
     

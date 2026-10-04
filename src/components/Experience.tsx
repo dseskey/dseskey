@@ -5,6 +5,7 @@ interface ExperienceItem {
   title: string;
   company: string;
   description: string;
+  sortOrder: number;
 }
 
 const Experience: React.FC = () => {
@@ -13,19 +14,22 @@ const Experience: React.FC = () => {
       period: '2020 - Present',
       title: 'Senior Software Engineer',
       company: 'Tech Innovations Inc.',
-      description: 'Lead a team of 8 engineers developing cloud-native applications. Architected microservices infrastructure serving 2M+ users. Reduced deployment time by 60% through CI/CD improvements.'
+      description: 'Lead a team of 8 engineers developing cloud-native applications. Architected microservices infrastructure serving 2M+ users. Reduced deployment time by 60% through CI/CD improvements.',
+      sortOrder: 1
     },
     {
       period: '2017 - 2020',
       title: 'Full Stack Developer',
       company: 'Digital Solutions LLC',
-      description: 'Developed and maintained React/Node.js applications for enterprise clients. Implemented automated testing strategies that improved code quality by 40%. Mentored junior developers.'
+      description: 'Developed and maintained React/Node.js applications for enterprise clients. Implemented automated testing strategies that improved code quality by 40%. Mentored junior developers.',
+      sortOrder: 2
     },
     {
       period: '2014 - 2017',
       title: 'Software Developer',
       company: 'StartupCo',
-      description: 'Built MVP products from concept to launch. Worked directly with founders to translate business requirements into technical solutions. Gained experience across the full product lifecycle.'
+      description: 'Built MVP products from concept to launch. Worked directly with founders to translate business requirements into technical solutions. Gained experience across the full product lifecycle.',
+      sortOrder: 3
     }
   ];
 

@@ -1,5 +1,6 @@
 export const scrollToSection = (sectionId: string): void => {
   const element = document.getElementById(sectionId);
+  // amazonq-ignore-next-line
   if (element) {
     element.scrollIntoView({ behavior: 'smooth' });
   }

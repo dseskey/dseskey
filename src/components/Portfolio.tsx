@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
+import SortControls from './SortControls';
+import { sortByField, SortDirection, SortField } from '../utils/sortUtils';
 
 interface Project {
   title: string;

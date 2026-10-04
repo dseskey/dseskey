@@ -55,6 +55,7 @@ describe('Contact', () => {
   it('calls onDownloadResume when Download Resume is clicked', () => {
     render(<Contact onDownloadResume={mockOnDownloadResume} />);
     
+    // amazonq-ignore-next-line
     fireEvent.click(screen.getByText('Download Resume'));
     expect(mockOnDownloadResume).toHaveBeenCalled();
   });
